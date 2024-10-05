@@ -1,0 +1,114 @@
+/* General container styling */
+.container {
+  max-width: 1080px;
+  margin: 20px auto;
+  font-family: 'Roboto', sans-serif;
+  background-color: white;
+  color: black;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.container.dark {
+  background-color: #2c3e50;
+  color: white;
+}
+
+/* Toggle Button Styling */
+.toggle-button {
+  margin: 20px auto;
+  padding: 10px 20px;
+  display: block;
+  cursor: pointer;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.toggle-button:hover {
+  background-color: #2980b9;
+}
+
+/* Loading and Error Styling */
+.loading,
+.error {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+/* Styling the AsyncPaginate Search bar */
+.async-select__control {
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  padding: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.container.dark .async-select__control {
+  background-color: #3c4858;
+  border: 1px solid #555;
+}
+
+.async-select__menu {
+  background-color: #fff;
+  color: black;
+}
+
+.container.dark .async-select__menu {
+  background-color: #3c4858;
+  color: white;
+}
+
+.async-select__option {
+  color: black;
+  background-color: white; /* Ensure the dropdown options have a clear background */
+}
+
+.container.dark .async-select__option {
+  color: white; /* Text color should be white for dark mode */
+  background-color: #3c4858; /* Dark background for the dropdown options */
+}
+
+.async-select__option--is-focused {
+  background-color: #3498db;
+  color: white;
+}
+
+.container.dark .async-select__option--is-focused {
+  background-color: #2980b9; /* Highlight color when option is focused in dark mode */
+  color: white;
+}
+
+/* Placeholder styling */
+.async-select__placeholder {
+  color: #777;
+}
+
+.container.dark .async-select__placeholder {
+  color: #bbb;
+}
+
+/* Dark mode input text color */
+.async-select__input input {
+  color: black;
+}
+
+.container.dark .async-select__input input {
+  color: white;
+}
+
+.dashboard-title {
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #3498db;
+}
+
+.container.dark .dashboard-title {
+  color: #ecf0f1; /* Light color for dark mode */
+}
